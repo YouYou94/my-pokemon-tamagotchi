@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/my-pokemon-tamagotchi/static/css/main.9b280b23.css",
+    "main.js": "/my-pokemon-tamagotchi/static/js/main.54277093.js",
+    "index.html": "/my-pokemon-tamagotchi/index.html",
+    "main.9b280b23.css.map": "/my-pokemon-tamagotchi/static/css/main.9b280b23.css.map",
+    "main.54277093.js.map": "/my-pokemon-tamagotchi/static/js/main.54277093.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9b280b23.css",
+    "static/js/main.54277093.js"
+  ]
+}
