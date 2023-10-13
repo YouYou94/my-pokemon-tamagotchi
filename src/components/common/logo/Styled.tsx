@@ -16,6 +16,5 @@ export const Pointer = styled.div`
 `;
 
 export const LogoImg = styled.img`
-  min-width: 30rem;
-  max-width: 48rem;
+  width: 48rem;
 `;
