@@ -7,9 +7,12 @@ export const DefaultLayout = styled.div`
 `;
 
 export const ColumnLayout = styled(DefaultLayout)<{
+  height?: string;
   justifycontent?: string;
   alignitems?: string;
 }>`
+  height: ${(prop) => prop.height};
+
   flex-direction: column;
   justify-content: ${(prop) => prop.justifycontent};
   align-items: ${(prop) => prop.alignitems};
