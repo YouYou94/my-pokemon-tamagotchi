@@ -6,6 +6,11 @@ export const DefaultLayout = styled.div`
   display: flex;
 `;
 
-export const ColumnLayout = styled(DefaultLayout)`
+export const ColumnLayout = styled(DefaultLayout)<{
+  justifycontent?: string;
+  alignitems?: string;
+}>`
   flex-direction: column;
+  justify-content: ${(prop) => prop.justifycontent};
+  align-items: ${(prop) => prop.alignitems};
 `;
