@@ -1,22 +1,32 @@
 import styled from '@emotion/styled';
 import { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 import Start_Default from '../../../assets/button/Start_Default.png';
 import Start_Hover from '../../../assets/button/Start_Hover.png';
 
 export const StartButton = () => {
+  const navigate = useNavigate();
   const [isHover, setIsHover] = useState<boolean>(false);
 
-  const MouseOverHandler = (event: React.MouseEvent<HTMLButtonElement>) => {
+  const onMouseOverHandler = (event: React.MouseEvent<HTMLButtonElement>) => {
     setIsHover(true);
   };
 
-  const MouseOutHandler = (event: React.MouseEvent<HTMLButtonElement>) => {
+  const onMouseOutHandler = (event: React.MouseEvent<HTMLButtonElement>) => {
     setIsHover(false);
+  };
+
+  const onClickHandler = () => {
+    navigate('/my-pokemon-tamagotchi/home');
   };
 
   return (
     <Layout>
-      <Button onMouseOver={MouseOverHandler} onMouseOut={MouseOutHandler}>
+      <Button
+        onMouseOver={onMouseOverHandler}
+        onMouseOut={onMouseOutHandler}
+        onClick={onClickHandler}
+      >
         <ButtonImg
           src={isHover ? Start_Hover : Start_Default}
           alt="Start Button Image"
