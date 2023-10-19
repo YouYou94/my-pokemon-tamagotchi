@@ -1,4 +1,4 @@
-import { Box, Layout, LogoImg, Pointer } from './Styled';
+import styled from '@emotion/styled';
 import MainLogo from '../../../assets/logo/Main.png';
 
 export const Logo = () => {
@@ -12,3 +12,22 @@ export const Logo = () => {
     </Layout>
   );
 };
+
+const Layout = styled.header`
+  height: 15rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`;
+
+const Box = styled.div``;
+
+const Pointer = styled.div`
+  cursor: pointer;
+  user-select: none;
+`;
+
+const LogoImg = styled.img`
+  width: 48rem;
+`;
